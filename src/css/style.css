@@ -1,104 +1,137 @@
-body{
-    font-family: arial,helvetica;
-    background-color: rgb(241, 242, 241);
-}
-
-h1{
-    font-size: 6em;
-    font-size: calc(2em + 2vw);
-    margin:0;
-}
-
-.section{
-    color: #fff;
-    text-align:center;
-}
-
-/* Backgrounds colors for sections */
-.fp-section:nth-child(1){
-    
-}
-
-.fp-section:nth-child(2){
-    
-}
-
-.fp-section:nth-child(3){
-    
-}
-
-/* Styling Our Menu */
-#menu{
-    position:fixed;
-    top:0;
-    left:0;
-    height: 40px;
-    z-index: 70;
-    width: 100%;
-    padding: 0;
-    margin:0;
-}
-
-#menu li {
-    display:inline-block;
-    margin: 0 1rem;
-    color: rgb(63, 35, 14);
-}
-
-
-#menu li:hover,
-#menu li.active,
-#menu li.active:hover{
-    scale: 1.2;
-}
-
-#menu li a{
-    text-decoration:none;
-    color: rgb(63, 35, 14);
-    padding: 0.5rem;
-    display:block;
-}
-
-#menu li.active a,
-#menu li.active:hover a:hover{
-    border-bottom: solid 1px rgb(63, 35, 14);
-    font-weight: 700;
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+body {
+  font-family: "Cherry Bomb One", cursive;
+  background-color: #fff3e8;
 }
 
 h1 {
-    color: rgb(63, 35, 14);
-    font-size: clamp(1.5rem, 2vw + 1rem, 3.5rem);
+  font-size: 6em;
+  font-size: calc(2em + 2vw);
+  margin: 0;
+}
+
+.section {
+  text-align: center;
+}
+
+/* Backgrounds colors for sections */
+/* Styling Our Menu */
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#menu li {
+  display: inline-block;
+  margin: 0 1rem;
+  color: #E16389;
+}
+#menu li:hover, #menu li.active, #menu li.active:hover {
+  scale: 1.2;
+}
+#menu li a {
+  text-decoration: none;
+  color: #E16389;
+  padding: 0.5rem;
+  display: block;
+}
+#menu li.active a {
+  border-bottom: solid 1px #E16389;
+  font-weight: 600;
+}
+#menu li.active a:hover {
+  border-bottom: solid 1px #E16389;
+  font-weight: 600;
+}
+#menu li.active:hover a:hover {
+  border-bottom: solid 1px #E16389;
+  font-weight: 600;
+}
+
+.centertitle {
+  padding-top: 25vh;
+}
+
+.id {
+  display: flex;
+  justify-content: space-between;
+  height: 90%;
+  align-items: center;
+}
+.id table {
+  width: 50%;
+  padding: 0 1rem;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+}
+.id table th {
+  font-weight: 700;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  max-width: 50%;
+}
+.id table td {
+  padding-left: 1rem;
+  max-width: 50%;
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+.id .icon {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #5A5859;
+  font-size: clamp(1.5rem, 2vw + 1rem, 3.5rem);
+}
+h1 span {
+  text-transform: uppercase;
+  color: #095D9B;
 }
 
 p {
-    color: rgb(63, 35, 14);
+  color: #5A5859;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
-
-span {
-    text-transform: uppercase;
+p span {
+  color: #E16389;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 #wind {
-    width: 10%;
-    height: auto;
-    object-fit: contain;
+  width: 10%;
+  height: auto;
+  object-fit: contain;
 }
 
-.box{
-    height: 30vh;
-    padding: 30px 0 0 0;
-    text-align: center;
-    background: #4e4e4e;
-    width: 400px;
-    max-width: 80vw;
-    margin: 30px auto;
-    border-radius: 12px;
-    font-size: 1.4em;
+.box {
+  height: 50vh;
+  text-align: center;
+  background-color: #FFFFFF;
+  width: auto;
+  aspect-ratio: 16/9;
+  max-width: 80vw;
+  margin: 30px auto;
+  border-radius: 12px;
+  border: 1px solid #5A5859;
+  box-shadow: -5px 4px 0 1px #5A5859, -4px 5px 0 1px #5A5859; /* bottom shadow */
 }
 
-
-@media (min-width: 768px) {
-    h1{
-    }
+.header {
+  background-color: #095D9B;
+  height: 10%;
+  border-bottom: 1px solid #5A5859;
+  border-radius: 12px 12px 0px 0px;
 }
-  
+
+/*# sourceMappingURL=style.css.map */

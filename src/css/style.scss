@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+$blue : #095D9B;
+$pink : #E16389;
+$grey : #5A5859;
+
+body{
+    font-family: 'Cherry Bomb One', cursive;
+    background-color: #fff3e8;
+}
+
+h1{
+    font-size: 6em;
+    font-size: calc(2em + 2vw);
+    margin:0;
+}
+
+.section{
+    // color: #fff;
+    text-align:center;
+}
+
+/* Backgrounds colors for sections */
+.fp-section:nth-child(1){
+    
+}
+
+.fp-section:nth-child(2){
+    
+}
+
+.fp-section:nth-child(3){
+    
+}
+
+/* Styling Our Menu */
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  
+    li {
+      display: inline-block;
+      margin: 0 1rem;
+      color: $pink;
+  
+      &:hover,
+      &.active,
+      &.active:hover {
+        scale: 1.2;
+      }
+  
+      a {
+        text-decoration: none;
+        color: $pink;
+        padding: 0.5rem;
+        display: block;
+      }
+  
+      // Add active link styles here
+      &.active {
+        a {
+          border-bottom: solid 1px $pink;
+          font-weight: 600;
+  
+          // Styles for a:hover when li is active and hovered
+          &:hover {
+            border-bottom: solid 1px $pink;
+            font-weight: 600;
+          }
+        }
+  
+        // When li is active and hovered, and a is hovered
+        &:hover {
+          a:hover {
+            border-bottom: solid 1px $pink;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+.centertitle {
+    padding-top: 25vh;
+}
+
+.id {
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+    align-items: center;
+
+    table {
+        width: 50%;
+        padding: 0 1rem;
+        text-align: left;
+        font-family: 'Nunito', sans-serif;
+
+        th {
+            font-weight: 700;
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            max-width: 50%;
+            
+        }
+
+        td {
+            padding-left: 1rem;
+            max-width: 50%;
+            font-weight: 600;
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+        }
+    }
+
+    .icon {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+
+
+h1 {
+    color: $grey;
+    font-size: clamp(1.5rem, 2vw + 1rem, 3.5rem);
+
+    span {
+        text-transform: uppercase;
+        color: $blue;
+    }
+}
+
+p {
+    color: $grey;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+
+    span{
+        color: $pink;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+}
+
+#wind {
+    width: 10%;
+    height: auto;
+    object-fit: contain;
+}
+
+.box{
+    height: 50vh;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: auto;
+    aspect-ratio: 16/9;
+    max-width: 80vw;
+    margin: 30px auto;
+    border-radius: 12px;
+    border: 1px solid $grey;
+    box-shadow: 
+    -5px 4px 0 1px $grey,  /* left shadow */
+    -4px 5px 0 1px $grey;   /* bottom shadow */
+
+}
+
+.header {
+    background-color: $blue;
+    height: 10%;
+    border-bottom: 1px solid $grey;
+    border-radius: 12px 12px 0px 0px;
+}
+
+
+@media (min-width: 768px) {
+    h1{
+    }
+}
+  
