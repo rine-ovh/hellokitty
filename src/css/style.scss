@@ -126,8 +126,16 @@ h1{
     
 }
 
+.family{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 10vh;
+}
 
-
+.fp-slide {
+    height: 90vh!important;
+}
 
 h1 {
     color: $grey;
@@ -181,6 +189,65 @@ p {
     border-bottom: 1px solid $grey;
     border-radius: 12px 12px 0px 0px;
 }
+
+// .fp-slidesNav{
+//     ul {
+//         width: fit-content;
+//         border: 1px solid $grey;
+//         height: fit-content;
+//        li {
+//         margin: 0!important;
+//         a {
+//             span {
+//                 background: $pink!important;
+//                 border-radius: 0!important;
+//             }
+//         }
+        
+//        }
+//     } 
+// }  
+.fp-slidesNav {
+    left: 50% !important;
+    ul {
+        display: flex;
+        gap: 4px;               // less gap between bullets
+        border: 1px solid $grey;
+        padding: 5px;
+        width: fit-content;
+        height: fit-content;
+
+        li {
+            margin: 0 !important;
+            width: 9px !important;          // width for ~9:16 ratio
+            height: 16px !important;         // taller height for rectangle shape
+            background: $grey;
+            border-radius: 0;   // rounded rectangle corners
+            opacity: 0.3;
+            transition: 
+            opacity 0.3s ease, 
+            background-color 0.3s ease;
+            cursor: pointer;
+  
+        &.visible {
+          opacity: 1;
+          background: $pink !important;
+        }
+  
+        &:hover {
+          background: $pink !important;  // pink on hover
+          opacity: 1;
+        }
+  
+        a {
+            span {
+                background: transparent !important; // remove default bullet color
+                border-radius: 0 !important;
+            }
+        }
+      }
+    }
+  }
 
 
 @media (min-width: 768px) {
